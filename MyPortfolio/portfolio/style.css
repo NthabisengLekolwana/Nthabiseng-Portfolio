@@ -10,18 +10,22 @@ body {
 }
 
 .header{
+    display: flex;
+    justify-content: flex-end;
     min-height: 100vh;
     width: 100%;
     background:  linear-gradient(rgba(155, 155, 155, 0.7), rgba(8, 57, 255, 0.7));
     background-position: center;
     background-size: cover;
     position: relative;
+    
 }
+
 nav{
-    display: flex;
+   /* display: flex;
     padding: 2% 6%;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
     
 }
 nav img{
@@ -55,23 +59,21 @@ nav img{
     width: 100%;
 }
 .text-box{
-    width: 90;
+    width: 60%;
     color: #ffffff;
-    position: absolute;
-    top: 60px;
-    margin-top: 10%;
-    margin-left: 25%;
-    transform: translate(40%,-20%);
-    text-align:end;
+    position: relative;
+    /* transform: translate(40%,-20%); */
+    text-align: center;
 }
 .text-box h1{
     font-size: 62px;
+    text-align: center;
 }
 
 
 
 .text-box p{
-    margin: 20px 0 40px;
+    
     font-size: 14px;
     color:blue;
 }
@@ -79,7 +81,7 @@ nav img{
     font-display: block;
     text-decoration: none;
     color: #fff;
-    padding: 80px 80px;
+    padding: 150px 150px;
     font-size: 20px;
 }
 @media(max-width: 700px){
