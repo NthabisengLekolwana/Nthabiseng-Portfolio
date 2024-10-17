@@ -1,4 +1,4 @@
-# portfolioMy Personal Portfolio
+# My Personal Portfolio
 Welcome to my personal portfolio! This document provides an overview of the project, including its purpose, features, and how to set it up.
 
 Overview
