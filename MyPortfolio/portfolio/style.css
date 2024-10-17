@@ -82,11 +82,11 @@ nav img{
     text-decoration: none;
     color: #fff;
     padding: 150px 150px;
-    font-size: 20px;
+    font-size: 80px;
 }
 @media(max-width: 700px){
     .text-box h1{
-        font-size: 20px;
+        font-size: 80px;
     }
 }
 .dfg{
