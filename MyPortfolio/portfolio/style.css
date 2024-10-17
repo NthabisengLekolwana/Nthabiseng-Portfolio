@@ -192,3 +192,11 @@ img {
     max-width: 100%;
     height: auto;
 }
+.button
+{
+    background-color: antiquewhite;
+    color: purple;
+    text-decoration: none;
+    padding: 17px;
+    width: 136px;
+}
