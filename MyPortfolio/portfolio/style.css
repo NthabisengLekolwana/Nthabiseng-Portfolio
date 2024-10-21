@@ -5,7 +5,7 @@
 
 body {
     background-image: url("image/logo.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 40%;
 }
 
@@ -195,7 +195,7 @@ img {
 .button
 {
     background-color: antiquewhite ;
-    color: purple;
+    color: blue;
     text-decoration: none;
     padding: 17px;
     width: 136px;
