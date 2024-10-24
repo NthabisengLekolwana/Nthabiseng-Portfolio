@@ -59,15 +59,15 @@ nav img{
     width: 100%;
 }
 .text-box{
-    width: 60%;
+    width: 90%;
     color: #ffffff;
     position: relative;
     /* transform: translate(40%,-20%); */
-    text-align: center;
+    text-align: right;
 }
 .text-box h1{
-    font-size: 62px;
-    text-align: center;
+    font-size: 90px;
+    text-align: right;
 }
 
 
