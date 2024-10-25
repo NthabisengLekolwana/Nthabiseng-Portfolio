@@ -1,0 +1,176 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* background-image: url("logo.png"); */
+}
+.background-image {
+    background-image: url('path/to/your/image.jpg');
+     /* Update the path */
+    background-repeat: no-repeat;
+    background-size: cover; /* Use 'contain' if you want to fit the image without cropping */
+    height: 0vh; /* Full height of the viewport */
+    display: flex; /* Centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white; /* Text color */
+   
+}
+
+header {
+    background: #f11414;
+    color: #fff;
+   
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px;
+    text-align: left;
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #fd1616;
+    padding: 10px 20px;
+    position: fixed;
+    height: 100%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block; /* Makes the entire area clickable */
+    padding: 10px; /* Adds padding for better hover effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Background color on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+
+.home {
+    padding: 20px;
+    margin: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.h1{
+    text-align: center;
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(30% - 20px); /* Adjust for margin */
+    text-align: center;
+    overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+ .center-page{
+   display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+} 
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
