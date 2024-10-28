@@ -16,7 +16,7 @@ Google Fonts (Poppins)
 Font Awesome (for icons)
 
 Installation
-To run this portfolio:
+To run this portfolio: .....
 
 Clone the repository:
 bash
