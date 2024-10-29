@@ -261,14 +261,14 @@ h3{
     button {
         padding: 10px;
         border: none;
-        background-color: #28a745;
+        background-color: blue;
         color: white;
         border-radius: 5px;
         cursor: pointer;
     }
     
     button:hover {
-        background-color: #218838;
+        background-color: blue;
     }
     
      /* .chat-container {
