@@ -223,7 +223,7 @@ h3{
         position: fixed;
         bottom: 20px; /* Adjust as needed */
         right: 20px; /* Adjust as needed */
-        background-color: #28a745; /* Color of the icon */
+        background-color: blue; /* Color of the icon */
         color: white;
         border-radius: 50%;
         padding: 15px;
