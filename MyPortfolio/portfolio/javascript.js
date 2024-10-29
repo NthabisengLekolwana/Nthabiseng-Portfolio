@@ -1,3 +1,20 @@
+
+function toggleChatBot() {
+    const chatContainer = document.getElementById('chat-container');
+    // Toggle the display property
+    if (chatContainer.style.display === 'block') {
+        chatContainer.style.display = 'none';
+    } else {
+        chatContainer.style.display = 'block';
+    }
+}
+
+// Initialize the chat container to be hidden when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('chat-container').style.display = 'none';
+});
+
+
 document.getElementById('send-button').addEventListener('click', sendMessage);
 
 function sendMessage() {
