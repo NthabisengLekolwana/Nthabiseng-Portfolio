@@ -6,64 +6,93 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/logo.png);
     background-position: center;
     background-size: cover;
     position: relative;
 }
-nav{
+nav {
+    background-color: #e4b3b3; /* Header background */
+    padding: 10px 20px; /* Spacing around the nav */
+}
+
+.nav-container {
     display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items:center;
-}  /* code ya go bea navbar on the rigth*/
-.nav-links {
-    flex: 1;
-    text-align: right;
-.nav-links ul li{
-    list-style: none;
-    display:list-item;
-    padding: 8px 12px;
-    position: relative;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+    padding: 8px 0;
 }
-}  /* code ya go decorate navbar*/
-.nav-links ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.5s;
+
+.nav-links ul {
+    display: flex; /* Align links in a row */
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
 }
-.nav-links ul li::after{
-    content: '';
-    width: 0%
-    height;
-    background-color: #3d3635;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
+
+.nav-links li {
+    margin-left: 20px; /* Spacing between links */
 }
-.nav-links ul li:hover::after{
-    width: 100%;
+
+.nav-links a {
+    color: black;/* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Spacing around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background change */
 }
-.text-box{
-  width: 90%;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,50%);
-  text-align: right;
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
 }
-.text-box h1{
-    font-size: 62px;
+
+.resume-button {
+    background-color: rgb(252, 247, 247); /* Resume button background */
+    color: white; /* Resume button text color */
 }
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color: #fff;
+
+.resume-button:hover {
+    background-color: darkblue; /* Resume button hover effect */
 }
+
+.landing {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 50px; /* Spacing around the section */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.profile {
+    display: flex; /* Align profile picture and info in a row */
+    align-items: center; /* Center items vertically */
+}
+
+.profile-pic {
+    width: 650px; /* Set profile picture width */
+    height: 650px; /* Set profile picture height */
+    border-radius: 50%; /* Circular profile picture */
+    margin: 60px 30px 0 30px; /* Space between picture and text */
+}
+
+.profile-info {
+    text-align: left; /* Align text to the left */
+}
+
+.name {
+    font-size: 7em; /* Size for the name */
+    color: rgb(226, 108, 148);
+    font-weight: bold; /* Bold text */
+    margin: 100; 
+    text-align: center;/* Remove default margin */
+}
+
+.title {
+    font-size: 1.2em; /* Size for the title */
+    color: rgb(82, 3, 40); /* Slightly darker color for the title */
+    margin-top: 5px; /* Space above the title */
+    text-align: center;
+}
+
 .hero-btn{
     display:inline-block;
     text-decoration: none;
@@ -122,10 +151,11 @@ nav .fa{
 h1{
     font-size: 36px;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 p{
     color: #777;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -134,10 +164,11 @@ p{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    
 }
 .presently{
     flex-basis: 31%;
-    background: #fff3f3;
+    background:  #e4b3b3;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -166,7 +197,7 @@ h3{
 }
 .cert{
     flex-basis: 31%;
-    background: #fff3f3;
+    background:  #e4b3b3;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -179,6 +210,7 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    
 }
 .cert
 :hover{
@@ -197,7 +229,7 @@ h3{
 }
 .touch{
     flex-basis: 31%;
-    background: #fff3f3;
+    background:  #e4b3b3;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -223,10 +255,10 @@ h3{
         position: fixed;
         bottom: 20px; /* Adjust as needed */
         right: 20px; /* Adjust as needed */
-        background-color: blue; /* Color of the icon */
+        background-color: rgb(82, 3, 40); /* Color of the icon */
         color: white;
         border-radius: 50%;
-        padding: 15px;
+        padding: 20px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         cursor: pointer;
         z-index: 1000; /* Ensure it's above other elements */
@@ -261,7 +293,7 @@ h3{
     button {
         padding: 10px;
         border: none;
-        background-color: blue;
+        background-color: rgb(82, 3, 40);
         color: white;
         border-radius: 5px;
         cursor: pointer;

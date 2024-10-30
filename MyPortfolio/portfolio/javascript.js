@@ -45,12 +45,15 @@ function appendMessage(sender, message) {
 
 function getChatbotResponse(message) {
     // Simple responses based on keywords
-    if (message.toLowerCase().includes('hello')) {
+   if (message.toLowerCase().includes('hello')||('hi')||('hey')) {
         return 'Hello! How can I help you today?';
     } else if (message.toLowerCase().includes('help')) {
         return 'Sure, what do you need help with?';
-    } else {
+       } else if  (message.toLowerCase().includes('education')||('experience')) {
+         return 'Please go to About';
+       } else {
         return 'Sorry, I did not understand that.';
-    }
+       }
+  
 }
 
