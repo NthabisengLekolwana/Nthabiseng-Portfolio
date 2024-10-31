@@ -43,17 +43,38 @@ function appendMessage(sender, message) {
     chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll
 }
 
-function getChatbotResponse(message) {
+/*function getChatbotResponse(message) {
     // Simple responses based on keywords
    if (message.toLowerCase().includes('hello')||('hi')||('hey')) {
         return 'Hello! How can I help you today?';
     } else if (message.toLowerCase().includes('help')) {
         return 'Sure, what do you need help with?';
-       } else if  (message.toLowerCase().includes('education')||('experience')) {
-         return 'Please go to About';
-       } else {
-        return 'Sorry, I did not understand that.';
-       }
-  
-}
+       } else if  (message.toLowerCase().includes('education')|| message.toLowerCase().includes('experience')) {
+       }  else {
+        return 'Sorry, I did not understand that.';}*/
+        
+        function getChatbotResponse(message) {
+            // Simple responses based on keywords
+            const lowerMessage = message.toLowerCase();
+            if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
+                return 'Hello! How can I help you today?';
+            } else if (lowerMessage.includes('help')) {
+                return 'Sure, what do you need help with?';
+            } else if (lowerMessage.includes('education') || lowerMessage.includes('experience')) {
+                return 'Please go to About';
+            } else if (lowerMessage.includes('location')|| lowerMessage.includes('where') || lowerMessage.includes('cv')) {    
+                return 'Please go to navigation bar and see resume';
+            } else if (lowerMessage.includes('Skills')|| lowerMessage.includes('skill')) {
+                return 'Please go to Skills';
+            } else {
+                return 'Sorry, I did not understand that.';
+            }
+        }
+        
+            
+        
+        
+        
+        
+        
 
