@@ -77,4 +77,37 @@ function appendMessage(sender, message) {
         
         
         
+        
+        
+        
+        
+        
+        
+        document.getElementById('send-button').addEventListener('click', function() {
+            const userInput = document.getElementById('user-input').value;
+            const chatBox = document.getElementById('chat-box');
+        
+            if (userInput) {
+                // Append user message
+                const userMessage = document.createElement('div');
+                userMessage.classList.add('user-message');
+                userMessage.textContent = userInput;
+                chatBox.appendChild(userMessage);
+        
+                // Clear input field
+                document.getElementById('user-input').value = '';
+        
+                // Simulate bot response
+                const botMessage = document.createElement('div');
+                botMessage.classList.add('bot-message');
+                botMessage.textContent = "Bot response here"; // Replace with actual bot response logic
+                chatBox.appendChild(botMessage);
+        
+                // Scroll to the bottom
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        });
+        
+        
+        
 
