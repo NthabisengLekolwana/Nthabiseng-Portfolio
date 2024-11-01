@@ -154,7 +154,23 @@ h1{
     margin-bottom: 30px;
 }
 p{
-    color: #777;
+    color: #e4b3b3 ;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.userText
+{
+    color: red ;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.chatbotText
+{
+    color: #0af386 ;
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
@@ -356,15 +372,21 @@ h3{
     }
     
     .user-message {
-        color:  #e4b3b3 ; /* User message color */
+        background-color: #e4b3b3  ; /* User message color */
+        color: white;
         text-align: right;
         margin: 5px 0;
+        padding: 5px;
+        border-radius: 5px;
     }
     
     .bot-message {
-        color:rgb(226, 108, 148) ; /* Bot message color */
+        background-color: white; /* Bot message color */
+        color: rgb(82, 3, 40);
         text-align: left;
         margin: 5px 0;
+        padding: 5px;
+        border-radius: 5px;
     }
     
 

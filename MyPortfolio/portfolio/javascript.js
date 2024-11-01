@@ -75,6 +75,13 @@ function appendMessage(sender, message) {
     const chatBox = document.getElementById('chat-box');
     const messageElement = document.createElement('p');
     messageElement.textContent = `${sender}: ${message}`;
+
+    if (sender === "Chatbot") {
+        messageElement.classList.add("bot-message")
+    } else if (sender === "User") {
+        messageElement.classList.add("user-message")
+    }
+
     chatBox.appendChild(messageElement);
     chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll
 }
