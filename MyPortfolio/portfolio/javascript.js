@@ -100,24 +100,14 @@ function appendMessage(sender, message) {
                 return 'Please go to navigation bar and see resume';
             } else if (lowerMessage.includes('Skills')|| lowerMessage.includes('skill')) {
                 return 'Please go to Skills';
+            } else if (lowerMessage.includes('call') || lowerMessage.includes('contact') || lowerMessage.includes('email')){
+                return ' You can call/whatsapp/sms me on 0765725003 or inbox nlekolwana6@gmail.com';
             } else {
                 return 'Sorry😒, I did not understand that.';
             }
         }
         
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        document.getElementById('send-button').addEventListener('click', function() {
+             document.getElementById('send-button').addEventListener('click', function() {
             const userInput = document.getElementById('user-input').value;
             const chatBox = document.getElementById('chat-box');
         
