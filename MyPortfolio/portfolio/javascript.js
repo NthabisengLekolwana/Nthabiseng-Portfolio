@@ -1,6 +1,7 @@
 
 function toggleChatBot() {
     const chatContainer = document.getElementById('chat-container');
+   // chatContainer.style.display = chatContainer.style.display === "block" ? "none" : "block";
     // Toggle the display property
     if (chatContainer.style.display === 'block') {
         chatContainer.style.display = 'none';
@@ -35,6 +36,41 @@ function sendMessage() {
     }
 }
 
+
+        
+document.getElementById('send-button').addEventListener('click', function() {
+    const userInput = document.getElementById('user-input').value;
+    const chatBox = document.getElementById('chat-box');
+
+    if (userInput) {
+        // Append user message
+        const userMessage = document.createElement('div');
+        userMessage.classList.add('user-message');
+        userMessage.textContent = userInput;
+        chatBox.appendChild(userMessage);
+
+        // Clear input field
+        document.getElementById('user-input').value = '';
+
+        // Simulate bot response
+        const botMessage = document.createElement('div');
+        botMessage.classList.add('bot-message');
+        botMessage.textContent = "Bot response here"; // Replace with actual bot response logic
+        chatBox.appendChild(botMessage);
+
+        // Scroll to the bottom
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+}); 
+
+
+
+
+
+
+
+
+
 function appendMessage(sender, message) {
     const chatBox = document.getElementById('chat-box');
     const messageElement = document.createElement('p');
@@ -43,21 +79,12 @@ function appendMessage(sender, message) {
     chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll
 }
 
-/*function getChatbotResponse(message) {
-    // Simple responses based on keywords
-   if (message.toLowerCase().includes('hello')||('hi')||('hey')) {
-        return 'Hello! How can I help you today?';
-    } else if (message.toLowerCase().includes('help')) {
-        return 'Sure, what do you need help with?';
-       } else if  (message.toLowerCase().includes('education')|| message.toLowerCase().includes('experience')) {
-       }  else {
-        return 'Sorry, I did not understand that.';}*/
         
         function getChatbotResponse(message) {
             // Simple responses based on keywords
             const lowerMessage = message.toLowerCase();
             if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
-                return 'Hello! How can I help you today?';
+                return 'Hello😊 How can I help you today?';
             } else if (lowerMessage.includes('help')) {
                 return 'Sure, what do you need help with?';
             } else if (lowerMessage.includes('education') || lowerMessage.includes('experience')) {
@@ -67,7 +94,7 @@ function appendMessage(sender, message) {
             } else if (lowerMessage.includes('Skills')|| lowerMessage.includes('skill')) {
                 return 'Please go to Skills';
             } else {
-                return 'Sorry, I did not understand that.';
+                return 'Sorry😒, I did not understand that.';
             }
         }
         
