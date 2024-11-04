@@ -94,12 +94,14 @@ function appendMessage(sender, message) {
                 return 'Hello😊 How can I help you today?';
             } else if (lowerMessage.includes('help')) {
                 return 'Sure, what do you need help with?';
-            } else if (lowerMessage.includes('education') || lowerMessage.includes('experience')) {
-                return 'Please go to About';
+            } else if (lowerMessage.includes('education')) {
+                return 'I have bachelor"s degree in Computer Science';
+            } else if (lowerMessage.includes('experience')) {
+                return 'I did an IT internship at MLM';
             } else if (lowerMessage.includes('location')|| lowerMessage.includes('where') || lowerMessage.includes('cv')) {    
                 return 'Please go to navigation bar and see resume';
             } else if (lowerMessage.includes('Skills')|| lowerMessage.includes('skill')) {
-                return 'Please go to Skills';
+                return 'I have strong time management, communication, customer service, delegation & teamwork skills.My technnical skills include c++,CSS,Java,HTML & Javascript';
             } else if (lowerMessage.includes('call') || lowerMessage.includes('contact') || lowerMessage.includes('email')){
                 return ' You can call/whatsapp/sms me on 0765725003 or inbox nlekolwana6@gmail.com';
             } else {

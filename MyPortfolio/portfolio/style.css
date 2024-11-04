@@ -160,6 +160,9 @@ p{
     line-height: 22px;
     padding: 10px;
 }
+.blackText{
+    color: #514848;
+}
 .userText
 {
     color: red ;
