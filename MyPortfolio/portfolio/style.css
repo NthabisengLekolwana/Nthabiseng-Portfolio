@@ -193,7 +193,7 @@ p{
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5;
-    border: 1px solid #ccc
+    border: 1px solid #cccH
 
 }
 h3{
@@ -240,6 +240,40 @@ h3{
         flex-direction: column;
     }
 }
+.cert{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+    border: 1px solid #cccH
+
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.cert:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row2{
+        flex-direction: column;
+    }
+
+    .Information Protection & Compliance Administrator Associate {
+        color: inherit; /* Use the same color as the surrounding text */
+        text-decoration: none; /* Remove underline */
+        cursor: pointer; /* Keep the pointer cursor */
+    }
+    
+    .Information Protection & Compliance Administrator Associate :hover {
+        text-decoration: underline; /* Optional: underline on hover */
+    }
+
 
 .row{
     margin-top: 5%;
