@@ -10,107 +10,159 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-     <section class="header">
-         <nav>
-          
-          <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
+<section class="header">
+  <nav>
+    <div class="nav-container">
+        <div class="nav-links" id="navLinks">
             <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Certificates">Certificates</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Contact">Contact</a></li>
+
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contacts">Contact Me</a></li>
+                <li>
+                    <a 
+                        href="CV.pdf" 
+                        download
+                        class="resume-button"
+                    >
+                        My Resume
+                    </a>
+                </li>
             </ul>
-          </div>
-          <i class="fa fa-times" onclick="showMenu()"></i>
-         </nav>
-      <div class="text-box">
-        <h1>Welcome to Nthabiseng Lekolwana's Personal Portfolio</h1>
-      </div>
-     </section>
-     <section class="info">
-      <h1>About</h1>
-      <p>A brief discription of Nthabiseng Lekolwana</p>
+        </div>
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+    </div>
+  </nav>
+  <div class="profile">
+    <img src="image/memoji.png" alt="Profile Picture" class="profile-pic">
+    <div class="profile-info">
+        <h1 class="name">Nthabiseng Lekolwana</h1>
+        <h2 class="title">Software Developer | CyberSec Engineer</h2>
+    </div>
+</div>
+</section>
+
+<section class="info" id="about me">
+      <h1 id="about-me" >About Me</h1>
+      <p>Hey there, my name is Nthabiseng Lekolwana. I am a quiet tech enthusiast with a passion for exploring the ever-evolving world of technology. Currently on a journey of learning and self-discovery, I immerse myself in various tech fields, from programming and software development to emerging technologies. Though I may be reserved, my curiosity drives me to seek knowledge and understand the intricacies of the digital landscape. I believe that every new skill I acquire brings me one step closer to finding my place in the tech community, and I’m excited to continue this journey of growth and exploration.</p>
       <div class="row"></div>
       <div class="presently">
-        <h3>PRESENTLY</h3>
-        <p>I am a Capaciti candidate on the ABSA COBOL X Mainframe programme.<br>
-           I am on HTML,CSS and Javascript skills. I am also <br>
+        <h3>Presently</h3>
+        <p class="blackText">I am a Capaciti candidate on the ABSA COBOL X Mainframe programme.<br>
+           I am improving my HTML,CSS and Javascript skills. I am also <br>
            looking to improve my soft skill, especially presenting.
-           Ultimately,Im work  </p>
+           Ultimately,Im workng towards being a well-rounded woman in tech. </p>
       </div>
       <div class="presently">
         <h3>Experience</h3>
-        <p> 01/11/23:  IT Support Internship at Phalaphala Consulting Management,<br>
-            based at Moretele Local Municipality </p>
+
+        <p class="blackText">I did a 10 months  IT internship at Phalaphala Consulting<br> 
+          Management, based at Moretele Local Municipality. <br>
+          I was doing support,mainly helpdesk.
+            </p>
       </div>
       <div class="presently">
         <h3>Education</h3>
-        <p>31/01/20-02/12/22: BSc of Computer Science.<br>
-            01/09-12/09: BSc Extended Development Programme</p>
+        <p class="blackText">2020-2022: I was doing Computer Science at University of Venda. <br>
+           2009-2002: I was doing BSc Extended Development Programme .
+        </p>
       </div>
       
-     </section>
+      
+</section>
      
-     <section class="info">
-      <h1>Certificates</h1>
+
+<section class="info">
+      <h1  id="certificates">Certificates</h1>
       <p>I have the following:</p>
       <div class="row2"></div>
       <div class="cert">
         <h3>ISC2 Certified in Cybersecurity</h3>
-        <p>Certification Number: 1646900<br>
-           Certification Cycle: 01/09/23-31/0826<br></p>
-        <img src="image\Slider-CC.jpg" class="responsive">
+
+        <img src="image/OIP.png" class="responsive">
+
       </div>
       <div class="cert">
         <a style="color:blue" href="Microsoft Certified Information Protection and Compliance Administrator.pdf" 
         class="fa-fa-certificate"></a><br>
         <h3>Microsoft Certified: Information Protection & Compliance Administrator Associate </h3>
-        <p>Certification Number: 50AB24-Q358ED<br>
-          Certification Cycle: 20/05/23-21/05/25<br></p>
-          <a style="color:blue" href="Microsoft Certified Information Protection and Compliance Administrator.pdf" class="fafa-certificate"></a>
-          hidden link</a> for more info.</p>
-        <img src="image/sc&if.png" class="responsive">
+
+        <img src="image\sc&if.png" class="responsive">
       </div>
       <div class="cert">
         <h3>Microsoft Security,Compliance & Information Fundamentals</h3>
-        <p>Certification Number: 2C2181-A193N5<br>
-          Certification Cycle: 04/12/23-<br></p>
+
         <img src="image/sc&if.png" class="responsive">
       </div>
     </section>
 
-    <section class="info">
-      <h1>Contact</h1>
-      <p>Please get in touch on the following:</p>
-      <div class="row3"></div>
-      <div class="cert">
-        <p>Handle: Nthabiseng Lekolwana</p>
-        <a style="color:blue" href="https://www.linkedin.com/in/nthabiseng-lekolwana-087547284/">
-          <i style="font-size:24px" class="fa">&#xf0e1;</i></a>
-      </div>
-      <div class="cert">
-        <p>Email: nlekolwana6@gmail</p>
-        <a style="color:blue" href="mailto:nlekolwana6@gmail.com">
-          <i style="font-size:24px" class="fa">&#xf0e0;</i></a>
-          </div>
-     <div class="cert">
-      <p>GitHub: NthabisengLekolwana</p>
-        <a style="color:blue" href="https://github.com/NthabisengLekolwana">
-          <i style="font-size:24px" class="fa">&#xf09b;</i></a>
-      </div>
-      <div class="cert">
-        <p>Call on</p>
-      <a style="color:blue" href="tel: +0765725003">0765725003</a><i class="fafa-mobile-phone"
-        style="font-size:24px"></i></a></p>
-      </div>
-    </section>
-    <footer>
-      <center>
-        <p style="color:blue"></pstyle>&copy;2024 Nthabiseng Lekolwana. All rights reserved.</p>
-        <a href="privacy-policy.html">Privacy Policy</a></center></footer>
-      </center>
-    </footer>
 
+</section>
+
+<section class="info">
+  <h1  id="skills">Skills</h1>
+  <p>I have the following:</p>
+  <div class="row2"></div>
+  <div class="cert">
+    <h3>Soft Skills</h3>
+    <p class="blackText">Time Management<br>Customer Service<br>Communication<br>Delegation<br>Teamwork</p>
+  </div>
+  <div class="cert">
+    <h3>Technical Skills</h3>
+    <p class="blackText">C++<br>CSS<br>Java<br>HTML<br>Helpdesk Support</p>
     
-</html>
+  </div>
+  
+
+</section>
+
+   <section class="info" id="contacts">
+        <h1>Contact Me</h1>
+        <p>Please Get In Touch Using The Following:</p>
+        <div class="row2"></div>
+        <div class="touch">
+          <h3>LinkedIn</h3>
+          <a style="color:rgb(82, 3, 40)" href="https://www.linkedin.com/in/nthabiseng-lekolwana-087547284/">
+            <i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+        </div>
+    
+        <div class="touch">
+          <h3>E-mail</h3>
+          <a style="color:rgb(82, 3, 40)" href="mailto:nlekolwana6@gmail.com">
+            <i style="font-size:24px" class="fa">&#xf0e0;</i></a>
+          </div>
+        <div class="touch">
+          <h3>GitHub</h3>
+          <a style="color:rgb(82, 3, 40)" href="https://www.github.com/NthabisengLekolwana">
+            <i style="font-size:24px" class="fa">&#xf09b;</i></a>
+          </div>
+          <div class="touch">
+            <h3>Cellphone</h3>
+         <a style="color:rgb(82, 3, 40)" href="tel:+0765725003">0765725003</a><i class="fafa-nobile-phone"
+            style="font-size:24px"></i></a></p>
+            </div>
+    </section>
+            <footer>
+              <center>
+                <p style="color:white"></p style>&copy; 2024 Nthabiseng Lekolwana.Do call on 076 572 5003. </p>
+              <a style="color:rgb(82, 3, 40)" href="privacy-policy.html">Privacy Policy. All rights reserved</a>
+              <footer>
+              </center>
+            </footer>
+      
+        
+     <div class="chat-bot-icon" onclick="toggleChatBot()"><i class="fa fa-comments"></i></div>
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">  Please, Let's Have A Chat!</div>
+            <div class="chat-box" id="chat-box">  </div>
+
+            <input type="text" id="user-input" placeholder="Type your message here..." />
+            <button id="send-button">Send</button>
+
+        </div>
+        <script src="javascript.js"></script>
+      </body>
+        
+    </html>
+
